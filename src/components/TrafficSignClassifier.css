@@ -1,0 +1,67 @@
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.custom-card {
+    flex: 1 1 340px;         /* min 340px, esnek büyür */
+    max-width: 460px;        /* max 460px olur */
+    min-width: 250px;        /* mobilde iyice daralır */
+    background: #fff;
+    border: 2px solid #e0e7ff;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1rem;
+}
+
+
+.custom-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sample-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.hoverable-image {
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    transition: all 0.2s ease;
+}
+
+.hoverable-image:hover {
+    transform: scale(1.1);
+    border-color: #3b82f6;
+}
+
+.sample-image {
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.sample-image:hover {
+    transform: scale(1.1);
+    border-color: #2563eb;
+}
+
+
